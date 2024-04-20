@@ -43,4 +43,5 @@ prohrabávání složky s projektem jsem to našel tady [\Saved\Logs\CPP_Only_Ex
 > [!IMPORTANT]
 > Tenhle soubor jsem našel ve složce: "Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP_Only_Example" takže jsem se rozhodl 
 > celou složku "Intermediate\Build" smazat a opětovné otevření "CPP_Only_Example.uproject" a následný build konečně v pohodě!
+> 
 > **Takže se to celé zhnojilo a tohle je jediný způsob jak to asi opravit.**
