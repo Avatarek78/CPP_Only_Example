@@ -10,7 +10,7 @@ Základ jsem dělal dle těchto tutoriálů na youtube: Unreal Engine 5 Tutorial
 - Je to možná divné, ale build změn zdrojáků v C++ je vhodné dělat jen přes fci "Live Coding"
   ![Live Coding](Doc/Live-coding.png)
   přímo v Unreal Engine. Build přímo ve Visual Studio zdá se způsoboval různé konflikty a problémy s buildem, 
-  které jsem popsal v kapitole [Nelze otevřít UE projekt](#nelze-otevřít-ue-projekt). Dokonce se mě stalo 
+  které jsem popsal v kapitole [Nelze otevřít UE projekt, protože prý nejde zkompilovat](#nelze-otevřít-ue-projekt-protože-prý-nejde-zkompilovat). Dokonce se mě stalo 
   i to, že ve VS build selhal (nesmyslně mimo moje změny), ale v UE byl OK a vše fungovalo jak má.
 
 ## Problémy s buildem
