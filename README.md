@@ -15,7 +15,7 @@ Základ jsem dělal dle těchto tutoriálů na youtube: Unreal Engine 5 Tutorial
 
 ## Problémy s buildem
 
-### Hned po založení projektu to hlásí chyby
+### Hned po založení projektu to hlásí chyby při kompilaci
 ``Engine\Source\Programs\AutomationTool\BuildGraph\BgScriptReader.cs(1640,37,1640,42): error CS8604: Possible null reference argument for parameter ‘other’ in ‘void HashSet.UnionWith(IEnumerable other)’.``
 ``Engine\Source\Programs\AutomationTool\Scripts\CheckForHacks.cs(87,26): error CA2017: Number of parameters supplied in the logging message template do not match the number of named placeholders``
 Bohužel v UE 5.3 jsou skutečně tyto dvě chyby, takže pokud chcete mít možnost něco dělat v UE 5.3 v C++ musíte nejprve tyto chyby, přímo v instalaci UE 5.3 opravit viz.:
@@ -30,6 +30,12 @@ Logger.LogInformation("Scanning files... [{Arg0}]", FilesToCheck.Count);
 if (users != null)
   	report.NotifyUsers.UnionWith(users);
 ```
+### Nekompatibilita s některými pluginy
+Ani oprava kompilace v UE 5.3 ale v našem případě nestačila. Objevila se nekompatibilita s některými pluginy
+#### GraphNUnrealPlugin
+Expecting to find a type to be declared in a module rules named 'GraphNUnrealPlugin' in UE5Rules, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null.  This type must derive from the 'ModuleRules' type defined by Unreal Build Tool.
+Nevím jak to řešit jinak než že jsem tento plugin ze složky **Engine\Plugins** odstranil a tím zmizela i chyba. Dostatečné pro tento testovací projekt, 
+ale naprosto blokující pro náš projekt, kde tento plugin využíváme! Co s tím? Napsat autorovi jestli by se na to nepodíval?
 
 ### Nelze otevřít UE projekt, protože prý nejde zkompilovat
 
