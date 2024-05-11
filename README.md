@@ -1,4 +1,4 @@
-# Poznámky k pokusnému projektu pro UE čistě v C++
+# Poznámky k pokusnému projektu pro UE 5.3 čistě v C++
 
 ## Zdroje
 Základ jsem dělal dle těchto tutoriálů na youtube: Unreal Engine 5 Tutorial - C++ 1-4 (Ryan Laley)
@@ -15,7 +15,7 @@ Základ jsem dělal dle těchto tutoriálů na youtube: Unreal Engine 5 Tutorial
 
 ## Problémy s buildem
 
-### Hned po založení projektu to hlásí chyby při kompilaci
+### Hned po založení projektu to hlásí chyby při kompilaci (jen 5.3)
 ``Engine\Source\Programs\AutomationTool\BuildGraph\BgScriptReader.cs(1640,37,1640,42): error CS8604: Possible null reference argument for parameter ‘other’ in ‘void HashSet.UnionWith(IEnumerable other)’.``
 ``Engine\Source\Programs\AutomationTool\Scripts\CheckForHacks.cs(87,26): error CA2017: Number of parameters supplied in the logging message template do not match the number of named placeholders``
 
@@ -31,6 +31,10 @@ Logger.LogInformation("Scanning files... [{Arg0}]", FilesToCheck.Count);
 if (users != null)
   	report.NotifyUsers.UnionWith(users);
 ```
+
+> [!IMPORTANT]
+> **Ve verzi 5.4 už to opravili a žádné takovéto opravy v UE nejsou potřeba**
+
 ### Nekompatibilita s některými pluginy
 Ani oprava kompilace v UE 5.3 ale v našem případě nestačila. Objevila se nekompatibilita s některými pluginy
 #### GraphNUnrealPlugin
