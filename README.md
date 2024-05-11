@@ -1,8 +1,10 @@
 # Poznámky k pokusnému projektu pro UE 5.3 čistě v C++
 
 ## Zdroje
-Základ jsem dělal dle těchto tutoriálů na youtube: Unreal Engine 5 Tutorial - C++ 1-4 (Ryan Laley)
+Základ jsem dělal dle těchto tutoriálů na youtube: Unreal Engine 5 Tutorial - C++ 1-4 (Ryan Laley) 
+
 [Unreal Engine 5 Tutorial - C++ Part 1: Create a Class](https://www.youtube.com/watch?v=FBpnOuCgHu4&list=PL6lJIEYmhD4_CeSnVzSdxOLVAuzTYf26Z)
+
 [Unreal Engine 5 Tutorial - C++ Part 2: UProperty & UFunction](https://www.youtube.com/watch?v=B9czUTN23SQ&list=PL6lJIEYmhD4_CeSnVzSdxOLVAuzTYf26Z)
 
 ## Obecné postřehy/zkušenosti
