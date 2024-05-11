@@ -1,4 +1,4 @@
-# Poznámky k pokusnému projektu pro UE 5.3 čistě v C++
+# Poznámky k pokusnému projektu pro UE čistě v C++
 
 ## Zdroje
 Základ jsem dělal dle těchto tutoriálů na youtube: Unreal Engine 5 Tutorial - C++ 1-4 (Ryan Laley) 
